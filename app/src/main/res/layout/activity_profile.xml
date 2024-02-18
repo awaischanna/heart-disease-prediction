@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/dashboard"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="25sp"
+                android:fontFamily="@font/merriweather_black"
+                android:includeFontPadding="false"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty"
+                android:text="Muhammad Awais"
+                android:layout_marginTop="27dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/merriweather_black"
+                android:includeFontPadding="false"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03350511534"
+                android:textSize="20sp"
+                android:fontFamily="@font/merriweather_light"
+                android:layout_below="@+id/username"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-40dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#D84B48"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21"
+                        android:textSize="20sp"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/merriweather_black"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/merriweather_light"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:layout_below="@+id/age"/>
+
+
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#D84B48"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textSize="20sp"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/merriweather_black"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/merriweather_light"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:layout_below="@+id/gender"/>
+
+
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/systolicbp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Systolic Bp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="120"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/diastolicbp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Diastolic Bp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="80"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cholesterol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cholesterol">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="210"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bloodsugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood Sugar">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10.5"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp">
+
+
+
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:fontFamily="@font/merriweather_bold"/>
+
+
+            <Button
+                android:id="@+id/predict"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/logout"
+                android:fontFamily="@font/merriweather_bold"
+                android:text="Predict" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    
+
+        
+
+
+</ScrollView>
